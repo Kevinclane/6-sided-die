@@ -22,16 +22,27 @@
   </header>
 
   <main class="container">
-    <div class="row d-flex cstmMarginTop cstmHeight">
-      <div class="col-12 text-center" id="die">
+    <div id="numDieSelector" class="row text">
+      <div class="col-12 d-flex justify-content-between">
+        <button onclick="numDie(1)" class="btn btn-primary numDieBtnSize text-center">1 Die</button>
 
+        <button onclick="numDie(2)" class="btn btn-primary numDieBtnSize text-center">2 Dice</button>
+
+        <button onclick="numDie(3)" class="btn btn-primary numDieBtnSize text-center">3 Dice</button>
+
+        <button onclick="numDie(4)" class="btn btn-primary numDieBtnSize text-center">4 Dice</button>
+
+        <button onclick="numDie(5)" class="btn btn-primary numDieBtnSize text-center">5 Dice</button>
+
+        <button onclick="numDie(6)" class="btn btn-primary numDieBtnSize text-center">6 Dice</button>
       </div>
     </div>
+    <div id="outerDice">
+
+    </div>
     <div class="row d-flex ">
-      <div class="col-12 text-center">
-        <button class="btn btn-primary" onclick="roll()">
-          <h2 class="m-auto">ROLL</h2>
-        </button>
+      <div class="col-12 text-center mt-5" id="btnSpot">
+
       </div>
     </div>
   </main>

@@ -14,6 +14,7 @@ footer{
   position: fixed;
   color: white;
   text-shadow: 2px 2px 2px black;
+  margin-top: 5%;
 }
 
 .bg-red{
@@ -26,6 +27,17 @@ footer{
 
 .cstmHeight{
   height: 112px;
+}
+
+.numDieBtnSize{
+  max-width: 15%;
+  margin-top: 5%;
+}
+
+
+
+.justify-content-even{
+  justify-content: space-evenly;
 }
 
 button{
