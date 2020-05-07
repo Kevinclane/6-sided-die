@@ -1,0 +1,36 @@
+header{
+  top: 0;
+  position: fixed;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+body{
+  background-image: url(magic-bg.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+footer{
+  bottom: 0;
+  position: fixed;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.bg-red{
+  background-color: crimson;
+}
+
+
+
+
+
+
+
+.space-between{
+  justify-content: space-between;
+}
+
+
