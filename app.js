@@ -228,24 +228,17 @@ function diceTemplate(num) {
     <div class="col-4 text-center d-flex justify-content-center" id="die4">
     </div>
     </div>
-    div class="col-4 text-center d-flex justify-content-center" id="die5">
+    <div class="col-4 text-center d-flex justify-content-center" id="die5">
     </div>
     </div>
-    div class="col-4 text-center d-flex justify-content-center" id="die6">
+    <div class="col-4 text-center d-flex justify-content-center" id="die6">
     </div>`
   }
 }
 //SELECTS TEMPLATES
 function numDie(num) {
-  if (num > 1) {
-    buttonTemplate(num)
-    setDiceTemplate(num)
-  } else if (num == 2) {
-    buttonTemplate(num)
-    setDiceTemplate(num)
-
-  }
-
+  buttonTemplate(num)
+  setDiceTemplate(num)
 }
 
 
