@@ -124,33 +124,23 @@ function dieCalc6() {
 
 
 function roll(num) {
-  if (num == 1) {
+  if (num >= 1) {
     dieCalc1()
-  } else if (num == 2) {
-    dieCalc1()
-    dieCalc2()
-  } else if (num == 3) {
-    dieCalc1()
-    dieCalc2()
-    dieCalc3()
-  } else if (num == 4) {
-    dieCalc1()
-    dieCalc2()
-    dieCalc3()
-    dieCalc4()
-  } else if (num == 5) {
-    dieCalc1()
-    dieCalc2()
-    dieCalc3()
-    dieCalc4()
-    dieCalc5()
-  } else if (num == 6) {
-    dieCalc1()
-    dieCalc2()
-    dieCalc3()
-    dieCalc4()
-    dieCalc5()
-    dieCalc6()
+    if (num >= 2) {
+      dieCalc2()
+      if (num >= 3) {
+        dieCalc3()
+        if (num >= 4) {
+          dieCalc4()
+          if (num >= 5) {
+            dieCalc5()
+            if (num === 6) {
+              dieCalc6()
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -165,14 +155,6 @@ function buttonTemplate(num) {
 //DICE TEMPLATE HOLDER
 
 function setDiceTemplate(num) {
-  let elem3 = document.getElementById("outerDice")
-  if (num == 1) {
-    elem3.innerHTML = `<div class="row d-flex cstmMarginTop cstmHeight justify-content-center" id="dice">
-  </div>`
-  } else if (num > 1) {
-    elem3.innerHTML = `<div class="row d-flex cstmMarginTop cstmHeight justify-content-even" id="dice">
-    </div>`
-  }
   diceTemplate(num)
 }
 
@@ -181,57 +163,57 @@ function diceTemplate(num) {
 
   let elem2 = document.getElementById("dice")
   if (num == 1) {
-    elem2.innerHTML = `<div class="col-4 d-flex justify-content-center " id="die1">
+    elem2.innerHTML = `<div class="col-4 d-flex justify-content-center " id="die1"><img src="die-1.png" alt="error loading image">
   </div>`
 
   } else if (num == 2) {
-    elem2.innerHTML = `<div class="col-4 d-flex " id="die1">
+    elem2.innerHTML = `<div class="col-4 d-flex " id="die1"><img src="die-1.png" alt="error loading image">
   </div>
-  <div class="col-4 d-flex" id="die2">
+  <div class="col-4 d-flex" id="die2"><img src="die-1.png" alt="error loading image">
 </div>`
 
   } else if (num == 3) {
-    elem2.innerHTML = `<div class="col-4 text-center d-flex justify-content-center " id="die1">
+    elem2.innerHTML = `<div class="col-4 text-center d-flex justify-content-center " id="die1"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-4 text-center d-flex justify-content-center" id="die2">
+    <div class="col-4 text-center d-flex justify-content-center" id="die2"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-4 text-center d-flex justify-content-center" id="die3">
+    <div class="col-4 text-center d-flex justify-content-center" id="die3"><img src="die-1.png" alt="error loading image">
     </div>`
   } else if (num == 4) {
-    elem2.innerHTML = `<div class="col-6 text-center d-flex justify-content-center " id="die1">
+    elem2.innerHTML = `<div class="col-6 text-center d-flex justify-content-center " id="die1"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-6 text-center d-flex justify-content-center" id="die2">
+    <div class="col-6 text-center d-flex justify-content-center" id="die2"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-6 text-center d-flex justify-content-center" id="die3">
+    <div class="col-6 text-center d-flex justify-content-center" id="die3"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-6 text-center d-flex justify-content-center" id="die4">
+    <div class="col-6 text-center d-flex justify-content-center" id="die4"><img src="die-1.png" alt="error loading image">
     </div>`
   } else if (num == 5) {
-    elem2.innerHTML = `<div class="col-6 text-center d-flex justify-content-center " id="die1">
+    elem2.innerHTML = `<div class="col-4 text-center d-flex justify-content-center " id="die1"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-6 text-center d-flex justify-content-center" id="die2">
+    <div class="col-4 text-center d-flex justify-content-center" id="die2"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-6 text-center d-flex justify-content-center" id="die3">
+    <div class="col-4 text-center d-flex justify-content-center" id="die3"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-6 text-center d-flex justify-content-center" id="die4">
+    <div class="col-4 text-center d-flex justify-content-center" id="die4"><img src="die-1.png" alt="error loading image">
     </div>
     </div>
-    <div class="col-6 text-center d-flex justify-content-center" id="die5">
+    <div class="col-4 text-center d-flex justify-content-center" id="die5"><img src="die-1.png" alt="error loading image">
     </div>`
   } else if (num == 6) {
-    elem2.innerHTML = `<div class="col-4 text-center d-flex justify-content-center " id="die1">
+    elem2.innerHTML = `<div class="col-4 text-center d-flex justify-content-center " id="die1"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-4 text-center d-flex justify-content-center" id="die2">
+    <div class="col-4 text-center d-flex justify-content-center" id="die2"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-4 text-center d-flex justify-content-center" id="die3">
+    <div class="col-4 text-center d-flex justify-content-center" id="die3"><img src="die-1.png" alt="error loading image">
     </div>
-    <div class="col-4 text-center d-flex justify-content-center" id="die4">
-    </div>
-    </div>
-    <div class="col-4 text-center d-flex justify-content-center" id="die5">
+    <div class="col-4 text-center d-flex justify-content-center" id="die4"><img src="die-1.png" alt="error loading image">
     </div>
     </div>
-    <div class="col-4 text-center d-flex justify-content-center" id="die6">
+    <div class="col-4 text-center d-flex justify-content-center" id="die5"><img src="die-1.png" alt="error loading image">
+    </div>
+    </div>
+    <div class="col-4 text-center d-flex justify-content-center" id="die6"><img src="die-1.png" alt="error loading image">
     </div>`
   }
 }
